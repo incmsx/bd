@@ -53,16 +53,16 @@ cause int not null references crash(id),
 character_id int not null references character(id)
 );
 
-insert character values(0,null, 0, null);
-insert character values(1, 'Сирэйнис', 0, null);
-insert colleague values(0, null, 0, 1);
-insert colleague values(1, 'Петр', 0, 1);
-insert colleague values(1, 'Иван', 0, 1);
-insert colleague values(2, 'Иван', 0, 1);
-insert crash values (0,'Поломка подземной транспортной системы');
-insert location values(0, 'Комната');
-insert belief values (0, 'возратиться в Лиз прежним маршрутом уже невозможно', 0, 0);
-insert assumption values(0, 'ему не помешают передвигаться свободно, до тех пор, пока он не вознамериться покинуть Диаспар', 0);
-insert lurking values(0, 'Слежка за главным героем', 0);
-insert proctor values (0, 413029, 0);
-insert character_location values (0, 0, 15:24);
+insert into character values(0,null, 0, null);
+insert into character values(1, 'Сирэйнис', 0, null);
+insert into colleague values(0, null, 0, 1);
+insert into colleague values(1, 'Петр', 0, 1);
+insert into colleague values(1, 'Иван', 0, 1);
+insert into colleague values(2, 'Иван', 0, 1);
+insert into crash values (0,'Поломка подземной транспортной системы');
+insert into location values(0, 'Комната');
+insert into belief values (0, 'возратиться в Лиз прежним маршрутом уже невозможно', 0, 0);
+insert into assumption values(0, 'ему не помешают передвигаться свободно, до тех пор, пока он не вознамериться покинуть Диаспар', 0);
+insert into lurking values(0, 'Слежка за главным героем', 0);
+insert into proctor values (0, 413029, 0);
+insert into character_location values (0, 0, '15:24');
